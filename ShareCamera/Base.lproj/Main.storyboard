@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShareCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOE-rN-YNv">
+                                <rect key="frame" x="150" y="560.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="NW1-id-oEV"/>
+                                    <constraint firstAttribute="height" constant="75" id="bNc-mf-BwH"/>
+                                </constraints>
+                                <state key="normal" title="Share" image="cloud.png"/>
+                                <connections>
+                                    <action selector="savePic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhn-z4-tjl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-97-RXV">
+                                <rect key="frame" x="30" y="635.5" width="75" height="26.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Camera">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82k-1B-ijN">
+                                <rect key="frame" x="160" y="635.5" width="55.5" height="26.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyy-x1-eBX">
+                                <rect key="frame" x="276.5" y="635.5" width="62" height="26.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Album">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5O-2O-DUh">
+                                <rect key="frame" x="0.0" y="529" width="375" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-ji-7K3">
+                                <rect key="frame" x="270" y="560.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Sy8-G9-bfg"/>
+                                    <constraint firstAttribute="width" constant="75" id="wVl-20-rZA"/>
+                                </constraints>
+                                <state key="normal" title="Album" image="albam.png"/>
+                                <connections>
+                                    <action selector="showAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7k-Cm-fVa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tUm-tG-igy">
+                                <rect key="frame" x="40" y="20" width="295" height="504"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67J-bl-nvv">
+                                <rect key="frame" x="30" y="560.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="2bq-dt-9d4"/>
+                                    <constraint firstAttribute="height" constant="75" id="ylD-QU-soJ"/>
+                                </constraints>
+                                <state key="normal" title="Camera" image="camera.png"/>
+                                <connections>
+                                    <action selector="cameraStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SE0-CJ-UJS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HOE-rN-YNv" firstAttribute="bottom" secondItem="82k-1B-ijN" secondAttribute="top" id="C4B-5B-gL4"/>
+                            <constraint firstItem="W5O-2O-DUh" firstAttribute="bottom" secondItem="HOE-rN-YNv" secondAttribute="top" constant="-5" id="DzI-M5-ob7"/>
+                            <constraint firstItem="W5O-2O-DUh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ghb-CT-rlc"/>
+                            <constraint firstItem="82k-1B-ijN" firstAttribute="centerX" secondItem="HOE-rN-YNv" secondAttribute="centerX" id="IyM-nQ-ESM"/>
+                            <constraint firstItem="67J-bl-nvv" firstAttribute="top" secondItem="HOE-rN-YNv" secondAttribute="top" id="LGC-T0-Rpk"/>
+                            <constraint firstItem="iZX-ji-7K3" firstAttribute="top" secondItem="HOE-rN-YNv" secondAttribute="top" id="LHN-ZY-4E0"/>
+                            <constraint firstItem="tUm-tG-igy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="MBE-eO-56p"/>
+                            <constraint firstItem="qE6-97-RXV" firstAttribute="bottom" secondItem="82k-1B-ijN" secondAttribute="bottom" id="Psc-l7-CbD"/>
+                            <constraint firstItem="tUm-tG-igy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="ROS-NR-KvE"/>
+                            <constraint firstItem="qE6-97-RXV" firstAttribute="centerX" secondItem="67J-bl-nvv" secondAttribute="centerX" id="YaK-OQ-lOw"/>
+                            <constraint firstItem="HOE-rN-YNv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8n-Ng-uuS"/>
+                            <constraint firstItem="tUm-tG-igy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-40" id="asp-Dv-gB1"/>
+                            <constraint firstItem="iZX-ji-7K3" firstAttribute="leading" secondItem="HOE-rN-YNv" secondAttribute="leading" constant="120" id="jMU-iE-SIW"/>
+                            <constraint firstItem="67J-bl-nvv" firstAttribute="leading" secondItem="HOE-rN-YNv" secondAttribute="leading" constant="-120" id="k2f-Nr-wLt"/>
+                            <constraint firstItem="tUm-tG-igy" firstAttribute="bottom" secondItem="W5O-2O-DUh" secondAttribute="top" constant="-5" id="kik-Gr-60j"/>
+                            <constraint firstItem="82k-1B-ijN" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-5" id="mKv-4o-lhE"/>
+                            <constraint firstItem="Gyy-x1-eBX" firstAttribute="centerX" secondItem="iZX-ji-7K3" secondAttribute="centerX" id="mNZ-Yr-EBJ"/>
+                            <constraint firstItem="Gyy-x1-eBX" firstAttribute="bottom" secondItem="82k-1B-ijN" secondAttribute="bottom" id="v0C-Cn-wsS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bAlbum" destination="iZX-ji-7K3" id="p6i-nf-jdJ"/>
+                        <outlet property="bCameraStart" destination="67J-bl-nvv" id="0R3-y2-WFg"/>
+                        <outlet property="bSavePic" destination="HOE-rN-YNv" id="qNa-hz-cyn"/>
+                        <outlet property="cameraView" destination="tUm-tG-igy" id="847-nz-iXy"/>
+                        <outlet property="label" destination="W5O-2O-DUh" id="RPt-iG-gLY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="albam.png" width="234" height="216"/>
+        <image name="camera.png" width="720" height="720"/>
+        <image name="cloud.png" width="1120" height="1125"/>
+    </resources>
+</document>
