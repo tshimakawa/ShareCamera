@@ -157,10 +157,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         if error != nil {
             print(error.code)
-            //label.text = "Save Failed !"
+            label.text = "Save Failed !"
         }
         else{
-            label.text = ""
+            label.text = "Selected Picture"
         }
     }
     

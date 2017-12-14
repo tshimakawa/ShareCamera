@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20DB5EE71FE0D98500BE5DDB /* albam.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB5EE41FE0D98400BE5DDB /* albam.png */; };
-		20DB5EE81FE0D98500BE5DDB /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB5EE51FE0D98400BE5DDB /* cloud.png */; };
-		20DB5EE91FE0D98500BE5DDB /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DB5EE61FE0D98500BE5DDB /* camera.png */; };
+		201085301FE27C95007AB629 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010852C1FE27C95007AB629 /* camera.png */; };
+		201085311FE27C95007AB629 /* albam.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010852D1FE27C95007AB629 /* albam.png */; };
+		201085331FE28371007AB629 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 201085321FE28371007AB629 /* sample.png */; };
+		201085351FE284AD007AB629 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 201085341FE284AC007AB629 /* cloud.png */; };
 		ABA78F841ECCD954003079CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA78F831ECCD954003079CA /* AppDelegate.swift */; };
 		ABA78F861ECCD954003079CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA78F851ECCD954003079CA /* ViewController.swift */; };
 		ABA78F891ECCD954003079CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA78F871ECCD954003079CA /* Main.storyboard */; };
@@ -37,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20DB5EE41FE0D98400BE5DDB /* albam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = albam.png; path = Image/albam.png; sourceTree = "<group>"; };
-		20DB5EE51FE0D98400BE5DDB /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud.png; path = Image/cloud.png; sourceTree = "<group>"; };
-		20DB5EE61FE0D98500BE5DDB /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = Image/camera.png; sourceTree = "<group>"; };
+		2010852C1FE27C95007AB629 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		2010852D1FE27C95007AB629 /* albam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albam.png; sourceTree = "<group>"; };
+		201085321FE28371007AB629 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		201085341FE284AC007AB629 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		ABA78F801ECCD954003079CA /* ShareCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA78F831ECCD954003079CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA78F851ECCD954003079CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +82,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201085291FE27C76007AB629 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				201085341FE284AC007AB629 /* cloud.png */,
+				201085321FE28371007AB629 /* sample.png */,
+				2010852D1FE27C95007AB629 /* albam.png */,
+				2010852C1FE27C95007AB629 /* camera.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		ABA78F771ECCD954003079CA = {
 			isa = PBXGroup;
 			children = (
+				201085291FE27C76007AB629 /* Image */,
 				ABA78F821ECCD954003079CA /* ShareCamera */,
 				ABA78F971ECCD954003079CA /* ShareCameraTests */,
 				ABA78FA21ECCD954003079CA /* ShareCameraUITests */,
@@ -103,9 +117,6 @@
 		ABA78F821ECCD954003079CA /* ShareCamera */ = {
 			isa = PBXGroup;
 			children = (
-				20DB5EE41FE0D98400BE5DDB /* albam.png */,
-				20DB5EE61FE0D98500BE5DDB /* camera.png */,
-				20DB5EE51FE0D98400BE5DDB /* cloud.png */,
 				ABA78F831ECCD954003079CA /* AppDelegate.swift */,
 				ABA78F851ECCD954003079CA /* ViewController.swift */,
 				ABA78F871ECCD954003079CA /* Main.storyboard */,
@@ -244,12 +255,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DB5EE81FE0D98500BE5DDB /* cloud.png in Resources */,
 				ABA78F8E1ECCD954003079CA /* LaunchScreen.storyboard in Resources */,
-				20DB5EE71FE0D98500BE5DDB /* albam.png in Resources */,
 				ABA78F8B1ECCD954003079CA /* Assets.xcassets in Resources */,
-				20DB5EE91FE0D98500BE5DDB /* camera.png in Resources */,
+				201085351FE284AD007AB629 /* cloud.png in Resources */,
 				ABA78F891ECCD954003079CA /* Main.storyboard in Resources */,
+				201085311FE27C95007AB629 /* albam.png in Resources */,
+				201085331FE28371007AB629 /* sample.png in Resources */,
+				201085301FE27C95007AB629 /* camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
